@@ -2,10 +2,10 @@ function prcc
 
 runs=1000;
 
-beta_LHS=LHS_Call(4.48,4.59,4.7,0.02,runs,'unif')*1e-9;
-delta_LHS=LHS_Call(7.7,8.0,8.3,0.04,runs,'unif')*1e-2;
-gamma_LHS=LHS_Call(3,4.08,5.43,0.04,runs,'unif');
-alpha_LHS=LHS_Call(7.9,11.5,18.4,0.1,runs,'unif');
+beta_LHS=lhsnorm(4.59,0.0516,runs)*1e-9;
+delta_LHS=lhsnorm(8.0,0.12,runs)*1e-2;
+gamma_LHS=lhsnorm(4.08,0.63,runs);
+alpha_LHS=lhsnorm(11.5,2.32,runs);
 
 y=[];
 for i=1:runs
