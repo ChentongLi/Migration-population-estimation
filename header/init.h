@@ -1,6 +1,6 @@
-#define Ndelay 6
-#define IntervalL 4
-#define Nlambda 33
+#define Ndelay 12
+#define IntervalL 3
+#define Nlambda 44
 FILE *Fmu,*Fit;
 
 typedef struct Par
